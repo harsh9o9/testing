@@ -20,6 +20,7 @@ function setPaginationFocus() {
   }
   // $(firstBtn).focus();
 }
-
-setQueryParams();
-setPaginationFocus();
+$(window).on("load", () => {
+  setQueryParams();
+  setPaginationFocus();
+});
